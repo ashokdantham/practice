@@ -12,6 +12,10 @@ export default function ButtonCounter() {
     console.log("count", count);
   }
 
+  if(count > 10) {
+    return <p>I have become pro in events</p>
+  }
+
   return (
     <div>
       <h1>Button Click Counter</h1>

@@ -1,9 +1,14 @@
-import ButtonCounter  from "./Components/Events/ButtonCounter";
+// import ButtonCounter  from "./Components/Events/ButtonCounter";
+// import Durga from "./Components/Conditions/Login";
+// import JobSeekers from "./Components/Lists/JobSeekers";
+import Basic from "./Components/Forms/Basic";
 const App = () => {
     return (
         <div>
-        <h1> Hello World</h1>
-        <ButtonCounter/>
+        {/* <ButtonCounter/> */}
+        {/* <Durga/> */}
+        {/* <JobSeekers/> */}
+        <Basic/>
         </div>
     )
 }
