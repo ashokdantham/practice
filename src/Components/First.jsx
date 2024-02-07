@@ -1,10 +1,11 @@
 import React from "react";
 import Soumya from "./Soumya";
 
-const First = () => {
+const First = (props) => {
+
     return (
         <div>
-        <h1>First Component</h1>
+        <h1>First Student</h1>
         <p>Class Attendess are</p>
         <ul>
             <li>Durga</li>
