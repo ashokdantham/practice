@@ -2,7 +2,8 @@
 // import Durga from "./Components/Conditions/Login";
 // import JobSeekers from "./Components/Lists/JobSeekers";
 // import Basic from "./Components/Forms/Basic";
-import Routes from "./Components/Routes";
+// import Routes from "./Components/Routes";
+import Memo from "./Components/Memo/MemoDemo";
 const App = () => {
     return (
         <div>
@@ -10,7 +11,8 @@ const App = () => {
         {/* <Durga/> */}
         {/* <JobSeekers/> */}
         {/* <Basic/> */}
-        <Routes/>
+        {/* <Routes/> */}
+        <Memo/>
         </div>
     )
 }

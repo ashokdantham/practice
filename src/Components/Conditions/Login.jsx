@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Login() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -10,18 +10,25 @@ function Login() {
   const handleLogout = () => {
     setIsLoggedIn(false);
   };
+  console.log('Component is rendered');
+  // useEffect(() => {
+  //   console.log('Component is rendered');
+  // })
+
+  useEffect(() => {
+    console.log('Component is mounted'); // Mounting --> Creating
+  },[])
+
+  useEffect(() => {
+    console.log("Component is updated"); // Updating --> Re-rendering
+  }, [isLoggedIn]);
+
+  useEffect(() => {
+    return () => {
+      console.log("Component is unmounted"); // Unmounting --> Destroying
+    }
+  },[]);
   
-  // if(isLoggedIn) {
-  //   return (<div>
-  //     <p>Welcome, user! You are logged in.</p>
-  //     <button onClick={handleLogout}>Logout</button>
-  //   </div>)
-  // }
-   
-  //   return (<div>
-  //     <p>Please log in to continue.</p>
-  //     <button onClick={handleLogin}>Login</button>
-  //   </div>)
   return (
     <div>
       <h1>Conditional Rendering Example</h1>
@@ -41,3 +48,5 @@ function Login() {
 }
 
 export default Login;
+
+// CRED: create, get, update, delete
