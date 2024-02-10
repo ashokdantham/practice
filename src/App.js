@@ -3,7 +3,9 @@
 // import JobSeekers from "./Components/Lists/JobSeekers";
 // import Basic from "./Components/Forms/Basic";
 // import Routes from "./Components/Routes";
-import Memo from "./Components/Memo/MemoDemo";
+// import Memo from "./Components/Memo/MemoDemo";
+// import UseStateExamlple from "./Components/Hooks/UseStateExample";
+import UseEffect from './Components/Hooks/UseEffectEx/First';
 const App = () => {
     return (
         <div>
@@ -12,7 +14,9 @@ const App = () => {
         {/* <JobSeekers/> */}
         {/* <Basic/> */}
         {/* <Routes/> */}
-        <Memo/>
+        {/* <Memo/> */}
+        {/* <UseStateExamlple/> */}
+        <UseEffect/>
         </div>
     )
 }
