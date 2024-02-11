@@ -12,7 +12,11 @@
 // import UseRed from './Components/Hooks/UseReducerExample/UseState'
 // import UseCallbackEx from './Components/Hooks/UseCallbackEx/Second'
 // import Crud from './Components/Hooks/Crud/DummyAPI'
-import UseMemoEx from './Components/Hooks/UseMemoEx'
+// import UseMemoEx from './Components/Hooks/UseMemoEx'
+// import Lissa from './Components/Hooks/CustomHook/Lissa'
+// import Ravi from './Components/Hooks/CustomHook/Ravi';
+import CustomHook from './CustomHook'
+
 
 
 const App = () => {
@@ -32,7 +36,10 @@ const App = () => {
         {/* <UseRed/> */}
         {/* <UseCallbackEx/> */}
         {/* <Crud/> */}
-        <UseMemoEx/>
+        {/* <UseMemoEx/> */}
+        {/* <Lissa/>
+        <Ravi/> */}
+        <CustomHook/>
         </div>
     )
 }

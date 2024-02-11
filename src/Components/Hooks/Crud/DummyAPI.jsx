@@ -4,6 +4,7 @@ import axios from 'axios';
 const API_BASE_URL = 'https://crudcrud.com/api/4439732cd34647c490f1c001e5c7ae1a/creditcards';
 
 const CreditCardList = ({ creditCards, onDelete }) => {
+    console.log("CreditCardList rendered", creditCards);
   return (
     <div>
       <h2>Credit Cards</h2>
@@ -57,12 +58,14 @@ const CreditCardApp = () => {
   const [creditCards, setCreditCards] = useState([]);
 
   useEffect(() => {
+    console.log("useEffect fetching credit cards first time");
     fetchCreditCards();
   }, []);
 
   const fetchCreditCards = async () => {
     try {
       const response = await axios.get(API_BASE_URL);
+      console.log("fetchCreditCards", response.data);   
       setCreditCards(response.data);
     } catch (error) {
       console.error('Error fetching credit cards:', error);
@@ -72,6 +75,7 @@ const CreditCardApp = () => {
   const createCreditCard = async (newCard) => {
     try {
       const response = await axios.post(API_BASE_URL, newCard);
+      console.log("createCreditCard", response.data);
       return response.data;
     } catch (error) {
       console.error('Error creating credit card:', error);
@@ -91,6 +95,7 @@ const CreditCardApp = () => {
   const handleAddCard = useCallback(
     async (newCard) => {
       const addedCard = await createCreditCard(newCard);
+      console.log('Added card:', addedCard);
       if (addedCard) {
         setCreditCards([...creditCards, addedCard]);
       }

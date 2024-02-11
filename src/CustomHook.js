@@ -2,8 +2,7 @@ import React from 'react';
 import useFetchUsers from './useFetchUsers';
 
 const UserList = () => {
-  const { loading, error, users } = useFetchUsers();
-
+  const { loading, error, users } = useFetchUsers();  // loading: false, error: null, users: [] 
   if (loading) {
     return <div>Loading...</div>;
   }

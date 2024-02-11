@@ -23,11 +23,7 @@ const useFetchUsers = () => {
 
     fetchUsers();
 
-    // Cleanup function
-    return () => {
-      // Any cleanup code goes here
-    };
-  }, []); // Empty dependency array ensures the effect runs only once
+  }, []);
 
   return { loading, error, users };
 };
