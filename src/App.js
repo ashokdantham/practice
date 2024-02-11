@@ -11,7 +11,8 @@
 // import UseRefExample from './Components/Hooks/UseRefEx/Final';
 // import UseRed from './Components/Hooks/UseReducerExample/UseState'
 // import UseCallbackEx from './Components/Hooks/UseCallbackEx/Second'
-import Crud from './Components/Hooks/Crud/DummyAPI'
+// import Crud from './Components/Hooks/Crud/DummyAPI'
+import UseMemoEx from './Components/Hooks/UseMemoEx'
 
 
 const App = () => {
@@ -30,7 +31,8 @@ const App = () => {
         {/* <UseRefExample/> */}
         {/* <UseRed/> */}
         {/* <UseCallbackEx/> */}
-        <Crud/>
+        {/* <Crud/> */}
+        <UseMemoEx/>
         </div>
     )
 }

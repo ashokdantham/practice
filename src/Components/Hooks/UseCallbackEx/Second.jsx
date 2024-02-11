@@ -2,7 +2,11 @@ import React, { useState, useCallback } from 'react';
 
 const ChildComponent = React.memo(({ onClick }) => {
   console.log('ChildComponent rendered');
-  return <button onClick={onClick}>Click me</button>;
+  return <div>
+    <h1>Child Component</h1>
+  <button onClick={onClick}>Click me</button>;
+
+  </div>
 });
 
 const ParentComponent = () => {
@@ -16,16 +20,17 @@ const ParentComponent = () => {
 //     setCount(count + 1);
 //   }, [count]); // Dependency array ensures the function is recreated only when 'count' changes
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     console.log('Button clicked');
     setCount(count + 1);
-  }
+  } ,[count]);// 1222321312, 13123213
 
 
   console.log('ParentComponent rendered');
 
   return (
     <div>
+        <h1>Parent Component</h1>
         <input type="text" value={name} onChange={(e)=>{setName(e.target.value)}} />
         <h1>{name}</h1>
       <p>Count: {count}</p>
