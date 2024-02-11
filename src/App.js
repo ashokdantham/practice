@@ -5,7 +5,15 @@
 // import Routes from "./Components/Routes";
 // import Memo from "./Components/Memo/MemoDemo";
 // import UseStateExamlple from "./Components/Hooks/UseStateExample";
-import UseEffect from './Components/Hooks/UseEffectEx/First';
+// import UseEffect from './Components/Hooks/UseEffectEx/First';
+// import PropsDriling from './Components/Hooks/UseContextEx/Parent'
+// import UseContext from './Components/Hooks/UseContextEx/Parent2';
+// import UseRefExample from './Components/Hooks/UseRefEx/Final';
+// import UseRed from './Components/Hooks/UseReducerExample/UseState'
+// import UseCallbackEx from './Components/Hooks/UseCallbackEx/Second'
+import Crud from './Components/Hooks/Crud/DummyAPI'
+
+
 const App = () => {
     return (
         <div>
@@ -16,9 +24,16 @@ const App = () => {
         {/* <Routes/> */}
         {/* <Memo/> */}
         {/* <UseStateExamlple/> */}
-        <UseEffect/>
+        {/* <UseEffect/> */}
+        {/* <PropsDriling/> */}
+        {/* <UseContext/> */}
+        {/* <UseRefExample/> */}
+        {/* <UseRed/> */}
+        {/* <UseCallbackEx/> */}
+        <Crud/>
         </div>
     )
 }
 export default App;
+
 
